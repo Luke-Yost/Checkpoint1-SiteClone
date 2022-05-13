@@ -29,18 +29,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      min-height: 5vh;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
 </head>
-<body>
+<body class="debug">
   <header class="container-fluid">
+    <div class="row bg-">
+      <div class="col justify-content-start">
+        <i class="mdi mdi-blur">Luke's Burnt Baked Goods</i>
+      </div>
+    </div>
     <div class="row">
-      
+      <div class="col-4">
+        <p>Bakey Bakey</p>
+        <form class="row">
+          <h6 class="col-10 offset-1">Ill respond eventually</h6>
+          <div class="col-10 offset-1">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Ur Name Her">
+          </div>
+          <div class="col-10 offset-1">
+            <label class="visually-hidden" for="autoSizingInput">EMAIL</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Electric Mail Address">
+          </div>
+          <div class="col-6 offset-1">
+            <label class="visually-hidden" for="autoSizingInput">Phone</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Le Tele">
+          </div>
+          <div class="col-4"><label class="visually-hidden" for="autoSizingInput">EMAIL</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Tele-
+            Ext."></div>
+        </form>
+      </div>
+      <div class="col-8">
+        <h4>Burnt Cake</h4>
+        <p>I made sure to leave this in my oven for 5 hours longer that the recipe specified :)</p>
+      </div>
     </div>
   </header>
   <main class="container-fluid">
-
+    <div class="row">
+      <div class="col">figma</div>
+    </div>
   </main>
   <footer class="container-fluid">
-
+    <div class="row">
+      <div class="col">figma</div>
+    </div>
   </footer>
 </body>
 </html>
