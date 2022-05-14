@@ -8,4 +8,6 @@ header{
 /* TODO add a filter to the flame image to make it less jarring */
 .bg-header-img{
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.j5U1EAKTL8A31p87MRT1qwHaEo%26pid%3DApi&f=1');
+  background-repeat:no-repeat;
+  background-size: cover ;
 }
