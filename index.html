@@ -38,6 +38,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+</head>
 
 <style>
   body.debug .container,
@@ -48,7 +49,6 @@
 
   body.debug .row {
     outline: 2px dashed red;
-    min-height: 5vh;
     outline-offset: -2px;
   }
 
@@ -58,9 +58,7 @@
   }
 </style>
 
-</head>
-
-<body class=" text-light">
+<body class="debug text-light">
 
   <nav class="sticky-top justify-content-start bg-secondary p-2">
     <i class="mdi mdi-blur ">Luke's Burnt Baked Goods</i>
@@ -68,11 +66,12 @@
 
   <!-- TODO add image background, colors, text colors, general formatting, and mobile friendliness -->
   <header class="container-fluid">
-    
-    <div class="row bg-header-img  background-size: cover;">
+    <div class="row bg-header-img">
       <div class="col-md-4">
         <p class="p-2 m-2">Bakey Bakey</p>
-        <form class="row bg-secondary p-2 m-2">
+        <!-- NOTE excess use of the grid system makes for overcomplexity in code -->
+        <!-- FIXME remove the margin and padding here as it can cause content spill -->
+        <form class="row bg-secondary">
           <h6 class="col-10 offset-1">Ill respond eventually</h6>
           <div class="col-10 offset-1">
             <label class="visually-hidden" for="autoSizingInput">Name</label>
@@ -98,7 +97,7 @@
           <button>Sendr</button>
         </form>
       </div>
-      <div class=" d-sm-none col-md-7 offset-1 text-start d-md-block ">
+      <div class=" d-none col-md-7 offset-1 text-start d-md-block ">
         <h4 class="mt-3">Burnt Cake</h4>
         <p>I made sure to leave this in my oven for 5 hours longer that the recipe specified :)</p>
       </div>
@@ -107,6 +106,7 @@
 <!-- TODO still needs general formatting, an icon on the I Heart Flaming FOod, and added mobile friendliness   -->
   <main class="container-fluid ">
     <div class="row bg-secondary">
+      <!-- NOTE do not use x margin on col's  -->
       <div class="col-5 m-3">
         <h6>Big Boy Bakes Burnt Bread</h6>
         <h6>Fr hell do</h6>
@@ -139,17 +139,17 @@
     </div>
     <!-- TODO add drop shadow to the cards and add slight rounding to the corners of the cards-->
     <!-- #region card -->
-    <div class="row bg-danger p-3 align-items-end">
-      <div class="col-4 ">
+    <div class="row bg-danger py-3 align-items-center">
+      <div class="col-md-4 d-flex justify-content-center ">
         <div class="card h-50 text-white bg-secondary mb-3" style="max-width: 18rem;">
           <div class="card-header">Header</div>
           <div class="card-body">
-            <h5 class="card-title">Secondary card title</h5>
+            <h5 class="card-title">first card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card h-100 text-white bg-secondary mb-3 border border-dark border-3" style="max-width: 18rem;">
           <div class="card-header"><b>Header</b></div>
           <div class="card-body">
@@ -158,11 +158,11 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card h-50 text-white bg-secondary mb-3" style="max-width: 18rem;">
           <div class="card-header">Header</div>
           <div class="card-body">
-            <h5 class="card-title">Secondary card title</h5>
+            <h5 class="card-title">3rd card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
@@ -173,7 +173,7 @@
 
   <footer class="container-fluid text-wrap">
     <div class="row bg-secondary">
-      <div class="col-12 m-3 p-2">
+      <div class="col-12 my-3 py-2">
         <h3><i>Liability Warning</i></h3>
         <p> I am not responible for any of my actions while proforming my job</p>
       </div>
