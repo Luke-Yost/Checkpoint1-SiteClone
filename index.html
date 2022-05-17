@@ -71,7 +71,7 @@
         <p class="p-2 m-2">Bakey Bakey</p>
         <!-- NOTE excess use of the grid system makes for overcomplexity in code -->
         <!-- FIXME remove the margin and padding here as it can cause content spill -->
-        <form class="row bg-secondary">
+        <form class=" bg-secondary my-2 p-3">
           <h6 class="col-10 offset-1">Ill respond eventually</h6>
           <div class="col-10 offset-1">
             <label class="visually-hidden" for="autoSizingInput">Name</label>
@@ -103,17 +103,15 @@
       </div>
     </div>
   </header>
+
+
 <!-- TODO still needs general formatting, an icon on the I Heart Flaming FOod, and added mobile friendliness   -->
   <main class="container-fluid ">
-    <div class="row bg-secondary">
+    <div class="row bg-secondary d-flex justify-content-center">
       <!-- NOTE do not use x margin on col's  -->
-      <div class="col-5 m-3">
-        <h6>Big Boy Bakes Burnt Bread</h6>
-        <h6>Fr hell do</h6>
-        <p>wakey wakey do the bakey but also do anything else that you wanna. Go for a hike. Play some br game that is filled with sweats and makes you wanna break stuff. Maybe become a MarkDown expert, because HTML is hard :(</p>
-      </div>
-      <div class="col-6 pt-3 m-2">
-        <div class="card " style="width: 18rem;">
+      
+      <div class="col-md-6 order-md-2 d-flex">
+        <div class="card d-flex m-3" style="width: 18rem;">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Doing Baking</li>
             <li class="list-group-item">Doing Burnting</li>
@@ -123,33 +121,31 @@
           </ul>
         </div>
       </div>
+      <div class="col-md-5 order-md-1 m-3">
+        <h6>Big Boy Bakes Burnt Bread</h6>
+        <h6>Fr hell do</h6>
+        <p>wakey wakey do the bakey but also do anything else that you wanna. Go for a hike. Play some br game that is filled with sweats and makes you wanna break stuff. Maybe become a MarkDown expert, because HTML is hard :(</p>
+      </div>
+      
     </div>
-    <div class="row bg-danger">
-      <div class="col-4 p-3">
+    <div class="row bg-danger d-flex">
+      <div class="col-md-4 p-3 d-flex justify-content-center">
         <img class="img-fluid align-center" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.fHdxkf_bobkAaYlyqgJHjwHaJ4%26pid%3DApi&f=1" alt="burnt somethin">
       </div>
-      <div class="col-8 text-wrap p-2 align ">
+      <div class="col-md-8 text-wrap p-2 d-flex flex-column justify-content-center d-inline-flex  flex-shrink-1">
         <h2 class="m-1">I Heart Flaming FOod </h2>
         <h2 class="m-1">I will bake in <i>Your</i> home. No negotiation allowed.</h2>
         <p>
           You <b>WILL</b> let me bake in your kitchen. That is not only what I want, but the driving force behind my very existence. I was put in this simulation for the express purpose of leaving horible burnt smells in peoples houses, and to make people appriciate literally any other food. Youre welcome in advance.
         </p>
-        <button class="bg-secondary text-white">MORE</button>
+        <button class=" btn bg-secondary text-white mx-3 px-3w ">MORE</button>
       </div>
+      
     </div>
     <!-- TODO add drop shadow to the cards and add slight rounding to the corners of the cards-->
     <!-- #region card -->
     <div class="row bg-danger py-3 align-items-center">
-      <div class="col-md-4 d-flex justify-content-center ">
-        <div class="card h-50 text-white bg-secondary mb-3" style="max-width: 18rem;">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">first card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-4 order-md-2 d-flex justify-content-center">
         <div class="card h-100 text-white bg-secondary mb-3 border border-dark border-3" style="max-width: 18rem;">
           <div class="card-header"><b>Header</b></div>
           <div class="card-body">
@@ -158,7 +154,16 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 order-md-1 d-flex justify-content-center ">
+        <div class="card h-50 text-white bg-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">first card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 order-md-3 d-flex justify-content-center">
         <div class="card h-50 text-white bg-secondary mb-3" style="max-width: 18rem;">
           <div class="card-header">Header</div>
           <div class="card-body">
